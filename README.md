@@ -1,6 +1,8 @@
 # Task-plan-manager
 
 [English](README.md) | [Chinese](README.zh-CN.md)
+
+
 ![openai](https://img.shields.io/badge/openai-0A0A0A?style=flat-square&logo=openai&logoColor=white) ![ai-agent](https://img.shields.io/badge/ai--agent-2563EB?style=flat-square) ![task-planning](https://img.shields.io/badge/task--planning-0F766E?style=flat-square) ![workflow](https://img.shields.io/badge/workflow-7C3AED?style=flat-square) ![developer-tools](https://img.shields.io/badge/developer--tools-334155?style=flat-square) ![productivity](https://img.shields.io/badge/productivity-15803D?style=flat-square) ![vscode-extension](https://img.shields.io/badge/vscode--extension-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white) ![jetbrains-plugin](https://img.shields.io/badge/jetbrains--plugin-111111?style=flat-square&logo=jetbrains&logoColor=white) ![cli-tool](https://img.shields.io/badge/cli--tool-CA8A04?style=flat-square)
 
 Task-plan-manager is a planning-focused Codex skill and tooling package built for long-running, multi-step work.
@@ -109,5 +111,6 @@ npm install -g task-plan-cli
 ```
 
 This adapter is intended for terminal-centric workflows, automation pipelines, and any environment that can execute local commands.
+
 
 
