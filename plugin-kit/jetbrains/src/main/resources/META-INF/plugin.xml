@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>com.amine.taskplan</id>
+    <name>Task Plan Manager</name>
+    <vendor email="amine@example.com">Amine</vendor>
+    <description>JetBrains starter adapter for task-plan-manager.</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij" />
+
+    <actions>
+        <action id="TaskPlan.Evaluate"
+                class="com.amine.taskplan.TaskPlanAction"
+                text="Task Plan: Evaluate Input"
+                description="Evaluate a request through the local task-plan bridge">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="TaskPlan.WakeAndDiagnose"
+                class="com.amine.taskplan.WakeAndDiagnoseAction"
+                text="Task Plan: Wake And Diagnose"
+                description="Check the bridge chain and issue a wake signal">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

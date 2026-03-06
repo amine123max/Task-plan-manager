@@ -1,0 +1,21 @@
+{
+  "name": "task-plan-cli",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Generic CLI adapter for task-plan-manager bridge.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "task-plan": "./bin/task-plan.js"
+  },
+  "files": [
+    "bin/**",
+    "src/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check bin/task-plan.js && node --check src/client.js",
+    "pack:dry": "npm pack --dry-run"
+  }
+}

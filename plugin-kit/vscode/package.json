@@ -1,0 +1,67 @@
+{
+  "name": "task-plan-vscode",
+  "displayName": "Task Plan Manager",
+  "description": "VS Code adapter for retained thread task-plan lists.",
+  "version": "0.1.0",
+  "publisher": "amine",
+  "license": "MIT",
+  "files": [
+    "src/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/task-plan-manager"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:taskPlan.evaluateInput",
+    "onCommand:taskPlan.refreshCurrentPlan",
+    "onCommand:taskPlan.markCurrentStepDone",
+    "onCommand:taskPlan.wakeAndDiagnose"
+  ],
+  "main": "./src/extension.js",
+  "scripts": {
+    "check": "node --check src/extension.js",
+    "package": "npx @vscode/vsce package"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "taskPlan.evaluateInput",
+        "title": "Task Plan: Evaluate Input"
+      },
+      {
+        "command": "taskPlan.refreshCurrentPlan",
+        "title": "Task Plan: Refresh Current Plan"
+      },
+      {
+        "command": "taskPlan.markCurrentStepDone",
+        "title": "Task Plan: Mark Current Step Done"
+      },
+      {
+        "command": "taskPlan.wakeAndDiagnose",
+        "title": "Task Plan: Wake And Diagnose"
+      }
+    ],
+    "configuration": {
+      "title": "Task Plan Manager",
+      "properties": {
+        "taskPlan.bridgeUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:42670",
+          "description": "Bridge service base URL."
+        },
+        "taskPlan.idleThresholdMinutes": {
+          "type": "number",
+          "default": 5,
+          "description": "Minutes before the extension warns that a long task looks idle."
+        }
+      }
+    }
+  }
+}
