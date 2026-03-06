@@ -1,6 +1,7 @@
 # Task-plan-manager
 
 [English](README.md) | [Chinese](README.zh-CN.md)
+- `openai` - `ai-agent` - `task-planning` - `workflow` - `developer-tools` - `productivity` - `vscode-extension` - `jetbrains-plugin` - `cli-tool`
 
 Task-plan-manager is a planning-focused Codex skill and tooling package built for long-running, multi-step work.
 It keeps complex requests visible, structured, and trackable through a retained task list, synchronized `update_plan` state, and reusable adapters for Codex, IDEs, and CLI workflows.
@@ -108,3 +109,4 @@ npm install -g task-plan-cli
 ```
 
 This adapter is intended for terminal-centric workflows, automation pipelines, and any environment that can execute local commands.
+
